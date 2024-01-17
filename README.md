@@ -11,12 +11,14 @@ The most DCF77 modules start to work at 1.2V or 2.5V.
 So, there shouldn't be a problem with any module.
 
 This program need the ‚wiringPi‘ library.
-# aptitude install wiringpi
+
+`aptitude install wiringpi`
 
 The library ‚rt‘ (‚realtime‘) is allready included in the Raspian OS.
 
 compile with:
-$ gcc -Wall -pedantic -std=c99 -lrt -lwiringPi -o dcf77_clock dcf77_clock.c
+
+`gcc -Wall -pedantic -std=c99 -lrt -lwiringPi -o dcf77_clock dcf77_clock.c`
 
 To start, you need at least the ‚-g‘ parameter with the pin number where the module is wired.
 If you have a receiver module with two outputs (normal and inverted),
